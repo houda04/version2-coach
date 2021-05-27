@@ -12,6 +12,7 @@ import RateReviewIcon from '@material-ui/icons/RateReview';
 import EventNoteIcon from '@material-ui/icons/EventNote';
 import RedeemIcon from '@material-ui/icons/Redeem';
 import Home from '../Home/Home'
+import SearchAppBar from './Appbar'
 
 
 const useStyles = makeStyles((theme) => ({
@@ -41,6 +42,7 @@ const Landing = () => {
       return (
 
         <React.Fragment>
+          
           <Grid item xs={6}>
             <Paper className={classes.paper}>
            
@@ -109,6 +111,7 @@ const Landing = () => {
   
   return (
     <div>
+      <SearchAppBar/>
         <div>
   <img
     
@@ -119,7 +122,7 @@ const Landing = () => {
   
 </div>
 
-<div style = {{width : '100%',  backgroundImage: `url("https://thumbs.gfycat.com/UltimateMeekArmedcrab-max-1mb.gif")` }}>
+<div style = {{width : '100%', marginBottom : 100 ,  backgroundImage: `url("https://thumbs.gfycat.com/UltimateMeekArmedcrab-max-1mb.gif")` }}>
     
     <Grid container spacing={1}>
   <Grid container item xs={12} spacing={3}>
@@ -133,38 +136,12 @@ const Landing = () => {
   </Grid>
  
 </Grid>
-</div>
+</div >
 
 
 
 
-{/* <Container>
-  <Row style = {{  backgroundImage: `url("https://thumbs.gfycat.com/UltimateMeekArmedcrab-max-1mb.gif")` , width : 1200}}>
-   
-    <Col>
- 
-        <h1 style = {{marginTop : 20 , marginBottom: 70, color : 'green'}} >Vidéos </h1>
-        <h5>Pour trouver mes vidéos n'hésitez pas de cliquer ici 
-        <img
-        className = 'clickMe'
-        style= {{width : 100 , height : 100}}
-          src = 'http://assets.stickpng.com/thumbs/59060d990cbeef0acff9a662.png'
-          />
-     
-        </h5>
-      
-  
-
- 
-
-     </Col>
-  </Row>
-  <Row style = {{marginTop : 100
-}}>
-   
-  </Row>
-</Container>
- */}
+<Footer/>
 
 
 
