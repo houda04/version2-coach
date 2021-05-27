@@ -3,6 +3,7 @@ import { Container, Grow, Grid, AppBar, TextField, Button, Paper } from '@materi
 import { useDispatch } from 'react-redux';
 import { useHistory, useLocation } from 'react-router-dom';
 import ChipInput from 'material-ui-chip-input';
+import Navbar from '../Navbar/Navbar';
 
 import { getPostsBySearch } from '../../actions/posts';
 import Posts from '../Posts/Posts';
@@ -46,6 +47,8 @@ const Home = () => {
   const handleDeleteChip = (chipToDelete) => setTags(tags.filter((tag) => tag !== chipToDelete));
 
   return (
+    <div>
+    
     <Grow in>
       <Container maxWidth="xl">
         <Grid container justify="space-between" alignItems="stretch" spacing={3} className={classes.gridContainer}>
@@ -75,6 +78,7 @@ const Home = () => {
         </Grid>
       </Container>
     </Grow>
+    </div>
   );
 };
 

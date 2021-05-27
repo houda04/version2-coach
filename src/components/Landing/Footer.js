@@ -5,12 +5,12 @@ import AppBar from '@material-ui/core/AppBar';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import PhoneIcon from '@material-ui/icons/Phone';
-import FavoriteIcon from '@material-ui/icons/Favorite';
-import PersonPinIcon from '@material-ui/icons/PersonPin';
-import HelpIcon from '@material-ui/icons/Help';
-import ShoppingBasket from '@material-ui/icons/ShoppingBasket';
-import ThumbDown from '@material-ui/icons/ThumbDown';
-import ThumbUp from '@material-ui/icons/ThumbUp';
+import DraftsIcon from '@material-ui/icons/Drafts';
+import MoreHorizIcon from '@material-ui/icons/MoreHoriz';
+import YouTubeIcon from '@material-ui/icons/YouTube';
+import FacebookIcon from '@material-ui/icons/Facebook';
+import InstagramIcon from '@material-ui/icons/Instagram';
+
 import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
 
@@ -74,24 +74,25 @@ export default function ScrollableTabsButtonPrevent() {
           aria-label="scrollable prevent tabs example"
         >
           <Tab icon={<PhoneIcon />} aria-label="phone" {...a11yProps(0)} />
-          <Tab icon={<FavoriteIcon />} aria-label="favorite" {...a11yProps(1)} />
-          <Tab icon={<PersonPinIcon />} aria-label="person" {...a11yProps(2)} />
-          {/* <Tab icon={<HelpIcon />} aria-label="help" {...a11yProps(3)} />
-          <Tab icon={<ShoppingBasket />} aria-label="shopping" {...a11yProps(4)} />
-          <Tab icon={<ThumbDown />} aria-label="up" {...a11yProps(5)} />
-          <Tab icon={<ThumbUp />} aria-label="down" {...a11yProps(6)} /> */}
+          <Tab icon={<DraftsIcon />} aria-label="favorite" {...a11yProps(1)} />
+          <Tab icon={<MoreHorizIcon />} aria-label="person" {...a11yProps(2)} />
+         
+          <Tab icon={<p>Copyrights: Augmentality2021 </p>} aria-label="down" {...a11yProps(6)} />
         </Tabs>
       </AppBar>
       <TabPanel value={value} index={0}>
-        Item One
+        <h2 style = {{color : 'green', fontSize :25}}>Téléphone: </h2>
       </TabPanel>
-      <TabPanel value={value} index={1}>
-        Item Two
+      <TabPanel value={value}  index={1}>
+        <h2 style = {{color : 'green', fontSize :25}}>Email : </h2>
       </TabPanel>
       <TabPanel value={value} index={2}>
-        Item Three
+      <YouTubeIcon style = {{color: 'green', width : 50 , height : 50, marginRight : 50, marginLeft: 500 }}/>
+          <FacebookIcon style = {{color: 'green', width : 50 , height : 50, marginRight : 50, marginLeft: 50 }}/>
+          <InstagramIcon style = {{color: 'green', width : 50 , height : 50, marginRight : 50, marginLeft: 50 }}/>
+          
       </TabPanel>
-      <TabPanel value={value} index={3}>
+      {/* <TabPanel value={value} index={3}>
         Item Four
       </TabPanel>
       <TabPanel value={value} index={4}>
@@ -102,7 +103,7 @@ export default function ScrollableTabsButtonPrevent() {
       </TabPanel>
       <TabPanel value={value} index={6}>
         Item Seven
-      </TabPanel>
+      </TabPanel> */}
     </div>
   );
 }

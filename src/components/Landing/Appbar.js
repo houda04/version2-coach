@@ -86,11 +86,9 @@ export default function SearchAppBar() {
           <Typography className={classes.title} variant="h6" noWrap>
             <strong>Augmentality</strong>
           </Typography>
-          <Link style = {{color : 'white ', backgroundColor : 'green'}}>
-          <Typography className={classes.title} variant="h6" noWrap>
-            <strong>Vidéos</strong>
-          </Typography>
-          </Link>
+        
+          
+         
         </Toolbar>
       </AppBar>
     </div>

@@ -12,7 +12,9 @@ import RateReviewIcon from '@material-ui/icons/RateReview';
 import EventNoteIcon from '@material-ui/icons/EventNote';
 import RedeemIcon from '@material-ui/icons/Redeem';
 import Home from '../Home/Home'
-import SearchAppBar from './Appbar'
+import SearchAppBar from './Appbar';
+import CustomizedButtons from './Buttons'
+import Videos from './Videos'
 
 
 const useStyles = makeStyles((theme) => ({
@@ -103,6 +105,7 @@ const Landing = () => {
  
     </form>
     <h3><RedeemIcon/>Appel de 30 Minutes découverte offert </h3>
+    <CustomizedButtons/>
           </Grid>
          
         </React.Fragment>
@@ -134,8 +137,22 @@ const Landing = () => {
             </Paper>
     <Home />
   </Grid>
+
  
 </Grid>
+<Grid container spacing={1}>
+ 
+  <Grid style = {{marginTop: 100}} container item xs={12} spacing={3}>
+  <Paper style = {{marginBottom : 50, width : 700}} className={classes.paper}>
+                <h1>Vidéos   </h1>
+            </Paper>
+    <Videos />
+  </Grid>
+  
+ 
+</Grid>
+
+
 </div >
 
 
