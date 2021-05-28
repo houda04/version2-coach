@@ -40,7 +40,7 @@ const Navbar = () => {
     <AppBar style = {{backgroundColor : 'green'}} className={classes.appBar} position="static" color="inherit">
       <Link to="/" className={classes.brandContainer}>
         <img component={Link} to="/" src={memoriesLogo} alt="icon" height="45px" />
-       <h1>Bienvenue Admin</h1>
+       <h1>Bienvenue </h1>
       </Link>
       <Toolbar className={classes.toolbar}>
         {user?.result ? (

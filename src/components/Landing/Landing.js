@@ -12,7 +12,7 @@ import RateReviewIcon from '@material-ui/icons/RateReview';
 import EventNoteIcon from '@material-ui/icons/EventNote';
 import RedeemIcon from '@material-ui/icons/Redeem';
 import Home from '../Home/Home'
-import SearchAppBar from './Appbar';
+import Navbar from '../../components/Navbar/Navbar'
 import CustomizedButtons from './Buttons'
 import Videos from './Videos'
 
@@ -114,7 +114,7 @@ const Landing = () => {
   
   return (
     <div>
-      <SearchAppBar/>
+     <Navbar/>
         <div>
   <img
     

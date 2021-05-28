@@ -35,6 +35,7 @@ const SignUp = () => {
     if (isSignup) {
       dispatch(signup(form, history));
     } else {
+
       dispatch(signin(form, history));
     }
   };

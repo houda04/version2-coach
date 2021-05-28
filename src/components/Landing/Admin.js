@@ -115,15 +115,7 @@ const Admin = () => {
   return (
     <div>
       <Navbar/>
-        <div>
-  <img
-    
-    style = {{width : '100%'}}
-    src= {logo}
-    alt="First slide"
-  />
-  
-</div>
+      
 
 <div style = {{width : '100%', marginBottom : 100 ,  backgroundImage: `url("https://thumbs.gfycat.com/UltimateMeekArmedcrab-max-1mb.gif")` }}>
     
